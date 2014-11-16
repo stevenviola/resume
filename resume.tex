@@ -1,5 +1,15 @@
 \documentclass{formats/format1}
 
+\ifpdf
+\pdfinfo{
+  /Author (Steven Viola)
+  /Subject (Resume)
+  /Title  (Steven Viola's Resume)
+  /CreationDate (D:20141110010600)
+  /Keywords (System Engineer; Steven Viola)
+}
+\fi
+
 %%%%%%%%%%%%
 % Begin The Resume
  
@@ -8,11 +18,12 @@
 \contact{Steven Viola}{Systems Engineer}{123 Fake Street}{Springfield}{12345}{(646) 783-8342}{steve@stevenviola.com} 
 
 % Skills
+% If using format1, need items divisible by 6
 \begin{ressection}{Key Skills}
   \begin{rescolumn}
     \resitem{AMQP}
     \resitem{Openstack}
-%    \resitem{Xen}
+    \resitem{Xen}
     \resitem{Puppet}
     \resitem{RPMs}
     \resitem{Linux}
@@ -20,17 +31,20 @@
     \resitem{Git}
     \resitem{FFmpeg}
     \resitem{Varnish}
-    \resitem{Haproxy}
+    \resitem{HAproxy}
     \resitem{Nagios}
     \resitem{Collectd}
     \resitem{Cacti}
     \resitem{Apache}
     \resitem{MySQL}
     \resitem{PHP}
+    \resitem{Node.js}
     \resitem{Javascript}
     \resitem{C/C++}
-%    \resitem{JSON}
-%    \resitem{XML}
+    \resitem{Python}
+    \resitem{JSON}
+    \resitem{XML}
+    \resitem{LaTeX}
   \end{rescolumn}
 \end{ressection}
 
@@ -38,9 +52,9 @@
 \begin{ressection}{experience}
   \begin{resentry}{Senior Systems Engineer}{Critical Media}{New York, NY}{February 2013 --- Present}
     \resitem{Responsible for several core systems used for recording, transcoding, and editing digital video}
-    \resitem{Created a Speech to Text infrastructure using AMQP for queueing jobs and Puppet to configure the cluster}
+    \resitem{Created a Speech to Text infrastructure using AMQP for queueing jobs, and Puppet to configure the cluster}
     \resitem{Deployed an Openstack infrastructure for the easy creation and maintenance of virtual machines}
-    \resitem{Created and Maintained custom Yum repositories and built RPMs for production code releases}
+    \resitem{Created and maintained custom Yum repositories and built RPMs for production code releases}
   \end{resentry}
   \begin{resentry}{Systems Engineer}{Critical Media}{New York, NY}{April 2011 --- February 2013}
     \resitem{Participated in the designing and development of software using agile development practices}
