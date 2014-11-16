@@ -49,6 +49,7 @@
   \vspace{-30pt}
   \begin{multicols}{6}
     \begin{itemize}
+      \renewcommand\labelitemi{}
       \setlength{\itemsep}{0cm}%
       \setlength{\parskip}{0cm}%
   }
